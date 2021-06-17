@@ -1,0 +1,353 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+:root{
+    --white-gray: #7f8fa6;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    height: 70px;
+    box-shadow:0px 2px 4px -2px rgb(159, 159 ,159, 76%);
+    -webkit-box-shadow:0px 2px 4px -2px rgb(159, 159 ,159, 76%);
+    -moz-box-shadow:0px 2px 4px -2px rgb(159, 159 ,159, 76%);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav  .link-container  ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+ nav .logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+}
+
+ nav  .link-container  ul li a{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    padding: 8px 18px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+ nav .link-container ul li a:hover{
+    background-color: gray;
+    color: white;
+    margin-left: 5px;
+}
+header  .circle{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(0, 0,0,0.05);
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    z-index: -1;
+}   
+
+header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header .container .left{
+    flex-basis: 60%;
+    max-width: 450px;
+}
+header .container .right{
+    flex-basis: 40%;
+    text-align: right;
+}
+header .container .right img{
+    width: 70%;
+}
+header .container .left > .title{
+    font-size: 50px;
+}
+header .container .left > .title > span{
+    color: #7f8fa6;
+}
+header .container .left > p{
+    margin-top: 10px;
+}
+
+header .container .left  .search-btn-container{
+    margin-top: 30px;
+}
+header .container .left  .search-btn-container  input{    
+    padding: 10px;
+    width: 75%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid gray;
+}
+.search-btn-container  button{
+    padding: 10px 18px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    background-color: #7f8fa6;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+header .counter-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+header .counter > p{
+    color: var(--white-gray);
+}
+#welcome-img{
+    position: absolute;
+    height: 300px;
+    left: 0;
+    width: 200px;
+    object-fit: contain;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.title-container{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.title-container h3 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.featured,.featured2,.blog-container{
+    padding: 100px 50px;
+    border: 2px solid var(--white-gray);
+}
+.featured-row,.featured2-row,.selling-row,.blog-row,.link-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.featured-left-col{
+    flex-basis: 50%;
+}
+.featured-left-col img{
+    width: 80%;
+}
+.featured-right-col .contain{
+    flex-basis: 50%;
+    max-width: 500px;
+}
+
+.featured-right-col .contain p{
+    color: gray;
+    margin: 20px 0;
+}
+.featured-right-col .contain h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.c-btn{
+    padding: 10px 18px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    background-color: #7f8fa6;
+    font-weight: 600;
+    cursor: pointer; 
+}    
+.c-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+ 
+.featured2-right-col{
+    flex-basis: 50%;
+    margin-left: 5rem;
+}
+
+.featured2-left-col img,.featured2-right-col img{
+    width: 80%;
+}
+
+.featured2-left-col .contain{
+    flex-basis: 60%;
+    max-width: 500px;
+}
+
+.featured2-left-col .contain p{
+    color: gray;
+    margin: 20px 0;
+}
+.featured2-left-col .contain h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.selling {
+    padding: 50px;
+}
+
+.selling-box {
+    flex-basis: 30%;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.selling-box div {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.selling-box div img {
+    width: 100%;
+}
+
+.selling-box h3 {
+    margin: 10px 0;
+}
+
+.blog-box{
+    flex-basis: 25%;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 2px 3px 5px grey;
+
+}
+.blog-box h3{
+    margin: 10px;
+}
+
+.blog-box p{
+    margin: 20px 10px;
+    color: var(--white-gray);
+}
+
+.blog-box .blog-img-container img{
+    width: 100%;
+}
+
+.simple-btn{
+    margin: 10px;
+    padding: 8px 18px;
+    outline: none;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+.blog-box button > a{
+    text-decoration: none;
+    color: gray;
+}
+
+.border-none{
+    border: none !important;
+}
+
+
+
+footer{
+    padding: 50px;
+}
+.email-container{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.email-container input{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    background: rgba(0,0,0,0.05);
+    outline: none;
+}
+
+.email-container button{
+    background-color: var(--white-gray);
+    color: white;
+}
+.link-contain{
+    flex-basis: 13%;
+    margin: 0 auto;
+
+}
+.link-contain h4{
+    font-size: 24px;
+}
+.link-contain > ul{
+    list-style: none;
+}
+.link-contain ul li{
+    margin: 10px 0;
+}
+.link-contain ul li a{
+    color: gray;
+}
+
+
+
+@media (max-width:770px) {
+    .selling-box {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .blog-box{
+        flex-basis: 100%;
+        margin-bottom:1rem;
+    }
+    .featured-left-col {
+        flex-basis: 100%;
+    }
+
+    .featured2-right-col {
+        flex-basis: 100%;
+        margin-left: 0rem;
+        margin-top: 1rem;
+    }
+    .featured2-right-col img{
+        width: 100%;
+    }
+    
+    .link-container{
+    display: none;
+    }
+    
+    header .container .left {
+        flex-basis: 100%;
+        margin: 50px;
+    }
+    header .container{
+        text-align: center;
+    }
+    header .container .right img{
+        display: none;
+    }
+
+    .search-btn-container button{
+        margin-top: 1rem;
+    }
+}
+
