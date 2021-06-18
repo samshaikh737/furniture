@@ -309,6 +309,9 @@ footer{
 
 
 @media (max-width:770px) {
+    .circle,#welcome-img{
+     display:none;
+    }
     .selling-box {
         flex-basis: 100%;
         text-align: center;
